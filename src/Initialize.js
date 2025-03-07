@@ -1,19 +1,16 @@
 export default class Initialize {
-
   constructor() {
 
-    console.log("Initialize ready");
+    const mArray = ["one", "two", "three", "four"];
 
-    this.ninja = document.createElement("div");
-    this.ninja.id = "ninja";
-    document.body.appendChild(this.ninja);
+    mArray.forEach((item, index) => {
 
-    let ninjaImg = document.createElement("img");
-    ninjaImg.src = "./assets/ninja.png";
-    this.ninja.appendChild(ninjaImg);
-
-    console.log('pop');
-
+      const myDiv = document.createElement("div");
+      myDiv.id = "poul";
+      document.body.appendChild(myDiv);
+      myDiv.textContent = item;
+      
+    });
 
 
   } // END constructor
